@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4 wheel coffin</title>
+    <title>Hot Wheels Store</title>
     <!--Favicon-->
     <link rel="icon" href="assets\favicon.png" type="image/png">
 </head>
@@ -17,22 +17,175 @@
             </a>
             <nav>
                 <div>
-                    Tesla, Vinfast, Ford, Toyota, Honda
-                    <a href="#Tesla-cars"></a>
-
-                    <a href="#Vinfast-cars"></a>
-                    
-                    <a href="Ford-cars"></a>
-                    
-                    <a href="Toyota-cars"></a>
-                    
-                    <a href="Honda-cars"></a>
-                    
-                    <a href="product-order.html"></a>
+                    <a href="index.html#Tesla-cars">
+                        <strong>Tesla</strong>
+                    </a>
+                    &nbsp;
+                    <a href="index.html#Vinfast-cars">
+                        <strong>Vinfast</strong>
+                    </a>
+                    &nbsp;
+                    <a href="index.html#Ford-cars">
+                        <strong>Ford</strong>
+                    </a>
+                    &nbsp;
+                    <a href="index.html#Toyota-cars">
+                        <strong>Toyota</strong>
+                    </a>
+                    &nbsp;
+                    <a href="index.html#Honda-cars">
+                        <strong>Honda</strong>
+                    </a>
+                    &nbsp;
+                    <a href="product-order.html#buy-form">
+                        <strong>Order now</strong>
+                    </a>
                 </div>
             </nav>
+            <!--Slogan-->
+            <section>
+                <img src="https://i.imgflip.com/7eo8xo.jpg" width="600px" alt="Hot-wheels-slogan">
+            </section>
         </header>
-
+        <!--End of header-->
+        <!--Main Form Section-->
+        <center>
+            <main style="width: 700px;">
+                <section>
+                    <h2>
+                        Get your Hot Wheels now
+                    </h2>
+                    <form action="form-processing" method="post" id="buy-form">
+                        <fieldset>
+                            <legend>Hot wheels owner information:</legend>
+                            <label for="firstName">First name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <br>
+                            <br>
+                            <label for="lastName">Last name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <br>
+                            <br>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                            <br>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Where do you want us to send your hot wheels(Hanoi and HCMC only):</legend>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address">
+                            <br>
+                            <br>
+                            <label for="district">District and City:</label>
+                            <select id="district" name="district">
+                                <!--Hanoi districts-->
+                                <option value="Hoàn Kiếm, Hanoi">Hoàn Kiếm, Hà Nội</option>
+                                <option value="Đống Đa, Hanoi">Đống Đa, Hà Nội</option>
+                                <option value="Ba Đình, Hanoi">Ba Đình, Hà Nội</option>
+                                <option value="Hai Bà Trưng, Hanoi">Hai Bà Trưng, Hà Nội</option>
+                                <option value="Hoàng Mai, Hanoi">Hoàng Mai, Hà Nội</option>
+                                <option value="Thanh Xuân, Hanoi">Thanh Xuân, Hà Nội</option>
+                                <option value="Long Biên, Hanoi">Long Biên, Hà Nội</option>
+                                <option value="Nam Từ Liêm, Hanoi">Nam Từ Liêm, Hà Nội</option>
+                                <option value="Bắc Từ Liêm, Hanoi">Bắc Từ Liêm, Hà Nội</option>
+                                <option value="Tây Hồ, Hanoi">Tây Hồ, Hà Nội</option>
+                                <option value="Cầu Giấy, Hanoi">Cầu Giấy, Hà Nội</option>
+                                <option value="Hà Đông, Hanoi">Hà Đông, Hà Nội</option>
+                                <!--HCMC districts-->
+                                <option value="Thủ Đức City">Thủ Đức City, HCMC</option>
+                                <option value="District 1, HCMC">District 1, HCMC </option>
+                                <option value="District 3, HCMC">District 3, HCMC</option>
+                                <option value="District 4, HCMC">District 4, HCMC</option>
+                                <option value="District 5, HCMC">District 5, HCMC</option>
+                                <option value="District 6, HCMC">District 6, HCMC</option>
+                                <option value="District 7, HCMC">District 7, HCMC</option>
+                                <option value="District 8, HCMC">District 8, HCMC</option>
+                                <option value="District 10, HCMC">District 10, HCMC</option>
+                                <option value="District 11, HCMC">District 11, HCMC</option>
+                                <option value="District 12, HCMC">District 12, HCMC</option>
+                                <option value="Bình Tân, HCMC">Bình Tân, HCMC</option>
+                                <option value="Bình Thạnh, HCMC">Bình Thạnh, HCMC</option>
+                                <option value="Gò Vấp, HCMC">Gò Vấp, HCMC</option>
+                                <option value="Phú Nhuận, HCMC">Phú Nhuận, HCMC</option>
+                                <option value="Tân Bình, HCMC">Tân Bình, HCMC</option>
+                                <option value="Tân Phú, HCMC">Tân Phú, HCMC</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="postcode">Postcode:</label>
+                            <input type="text" id="postcode" name="postcode">
+                            <br>
+                            <br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Your choice of Hot Wheels</legend>
+                            <h4>Tesla:</h4>
+                            <input type="checkbox" name="product" value="Tesla Model X Plaid">
+                            Model X Plaid
+                            <br>
+                            <input type="checkbox" name="product" value="Tesla Model S Plaid">
+                            Model S Plaid
+                            <br>
+                            <input type="checkbox" name="product" value="Tesla Model Y">
+                            Model Y
+                            <br>
+                            <h4>Vinfast:</h4>
+                            <input type="checkbox" name="product" value="Vinfast Lux A2.0">
+                            Lux A2.0
+                            <br>
+                            <input type="checkbox" name="product" value="Vinfast VF8">
+                            VF8
+                            <br>
+                            <input type="checkbox" name="product" value="Vinfast VF5">
+                            VF5
+                            <br>
+                            <h4>Ford:</h4>
+                            <input type="checkbox" name="product" value="Ford Mustang GT">
+                            Mustang GT
+                            <br>
+                            <input type="checkbox" name="product" value="Ford Explorer">
+                            Explorer
+                            <br>
+                            <input type="checkbox" name="product" value="Ford Ranger">
+                            Ranger
+                            <br>
+                            <h4>Toyota:</h4>
+                            <input type="checkbox" name="product" value="Toyota GR Supra">
+                            GR Supra
+                            <br>
+                            <input type="checkbox" name="product" value="Toyota Corolla">
+                            Corolla
+                            <br>
+                            <input type="checkbox" name="product" value="Toyota Camry">
+                            Camry
+                            <br>
+                            <h4>Honda:</h4>
+                            <input type="checkbox" name="product" value="Honda Civic Type R">
+                            Civic Type R
+                            <br>
+                            <input type="checkbox" name="product" value="Honda CR-V">
+                            CR-V
+                            <br>
+                            <input type="checkbox" name="product" value="Honda Ridgeline">
+                            Ridgeline
+                            <br>
+                        </fieldset>
+                        <br>
+                        <button type="submit">
+                            Get your Hot Wheels now!
+                            <img src="assets/submit-button.gif" width="600" alt="Submit button gif">
+                        </button>
+                    </form>
+                </section>
+            </main>
+        </center>
+        <!--Footer-->
+        <footer>
+            <h4>© Copyright 2023 by Nguyen Hoang Minh</h4>
+        </footer>
     </center>
 </body>
 </html>
